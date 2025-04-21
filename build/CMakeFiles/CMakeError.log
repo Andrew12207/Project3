@@ -1,0 +1,15 @@
+Performing C++ SOURCE FILE Test HAVE_FLAG__ffile_prefix_map_C__Users_ampri_Desktop_COP3530_Project3_build__deps_catch2_src__ failed with the following output:
+Change Dir: C:/Users/ampri/Desktop/COP3530/Project3/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_89092/fast && C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_89092.dir\build.make CMakeFiles/cmTC_89092.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/ampri/Desktop/COP3530/Project3/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_89092.dir/src.cxx.obj
+C:\mingw64\bin\g++.exe -DHAVE_FLAG__ffile_prefix_map_C__Users_ampri_Desktop_COP3530_Project3_build__deps_catch2_src__  -Wall -Werror    -ffile-prefix-map=C:/Users/ampri/Desktop/COP3530/Project3/build/_deps/catch2-src/= -o CMakeFiles\cmTC_89092.dir\src.cxx.obj -c C:\Users\ampri\Desktop\COP3530\Project3\build\CMakeFiles\CMakeTmp\src.cxx
+g++.exe: error: unrecognized command line option '-ffile-prefix-map=C:/Users/ampri/Desktop/COP3530/Project3/build/_deps/catch2-src/='
+mingw32-make.exe[1]: *** [CMakeFiles\cmTC_89092.dir\build.make:77: CMakeFiles/cmTC_89092.dir/src.cxx.obj] Error 1
+mingw32-make.exe[1]: Leaving directory 'C:/Users/ampri/Desktop/COP3530/Project3/build/CMakeFiles/CMakeTmp'
+mingw32-make.exe: *** [Makefile:126: cmTC_89092/fast] Error 2
+
+
+Source file was:
+int main() { return 0; }
