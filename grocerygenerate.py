@@ -2372,6 +2372,8 @@ def main():
     
     # Create DataFrame with ID included
     df = pd.DataFrame(all_items, columns=["id", "name", "store", "price"])
+
+    df = df.sample(frac=1).reset_index(drop=True) # Randomize rows
     
     # Save to CSV
     output_path = "grocery_items_refined.csv"
