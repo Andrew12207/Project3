@@ -1,9 +1,10 @@
 # include <iostream>
 #include <string>
 #include <unordered_map>
-#include "MergeSort.h"
+// #include "MergeSort.h"
 #include "ItemMap.h"
 #include "LinkedList.h"
+#include "QuickSort.h"
 
 using namespace std;
 
@@ -14,12 +15,16 @@ int main() {
     cout << id << endl;
 
 
-    LinkedList myList;
+    LinkedList unorderedList;
     
     // Load data from CSV file
-    if (loadCSVToLinkedList(myList)) {
+    if (loadCSVToLinkedList(unorderedList)) {
         std::cout << "Data loaded successfully!" << std::endl;
     }
 
+    Node* unorderedHead = unorderedList.getHead();
+
+    QuickSort sort;
+    sort.quickSort(unorderedHead);
     return 0;
 }

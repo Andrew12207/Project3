@@ -8,7 +8,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/ampri/Desktop/COP3530/Project3/src/MergeSort.cpp" "CMakeFiles/Main.dir/src/MergeSort.cpp.obj" "gcc" "CMakeFiles/Main.dir/src/MergeSort.cpp.obj.d"
   "C:/Users/ampri/Desktop/COP3530/Project3/src/main.cpp" "CMakeFiles/Main.dir/src/main.cpp.obj" "gcc" "CMakeFiles/Main.dir/src/main.cpp.obj.d"
   )
 

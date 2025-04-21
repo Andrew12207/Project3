@@ -128,30 +128,6 @@ Main/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/build
 .PHONY : Main/fast
 
-src/MergeSort.obj: src/MergeSort.cpp.obj
-.PHONY : src/MergeSort.obj
-
-# target to build an object file
-src/MergeSort.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/MergeSort.cpp.obj
-.PHONY : src/MergeSort.cpp.obj
-
-src/MergeSort.i: src/MergeSort.cpp.i
-.PHONY : src/MergeSort.i
-
-# target to preprocess a source file
-src/MergeSort.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/MergeSort.cpp.i
-.PHONY : src/MergeSort.cpp.i
-
-src/MergeSort.s: src/MergeSort.cpp.s
-.PHONY : src/MergeSort.s
-
-# target to generate assembly for a file
-src/MergeSort.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Main.dir\build.make CMakeFiles/Main.dir/src/MergeSort.cpp.s
-.PHONY : src/MergeSort.cpp.s
-
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -185,9 +161,6 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Main
-	@echo ... src/MergeSort.obj
-	@echo ... src/MergeSort.i
-	@echo ... src/MergeSort.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

@@ -3,10 +3,5 @@
   "directory": "C:/Users/ampri/Desktop/COP3530/Project3/build",
   "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/Main.dir/includes_CXX.rsp  -Wall -Werror -g -o CMakeFiles\\Main.dir\\src\\main.cpp.obj -c C:\\Users\\ampri\\Desktop\\COP3530\\Project3\\src\\main.cpp",
   "file": "C:/Users/ampri/Desktop/COP3530/Project3/src/main.cpp"
-},
-{
-  "directory": "C:/Users/ampri/Desktop/COP3530/Project3/build",
-  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/Main.dir/includes_CXX.rsp  -Wall -Werror -g -o CMakeFiles\\Main.dir\\src\\MergeSort.cpp.obj -c C:\\Users\\ampri\\Desktop\\COP3530\\Project3\\src\\MergeSort.cpp",
-  "file": "C:/Users/ampri/Desktop/COP3530/Project3/src/MergeSort.cpp"
 }
 ]

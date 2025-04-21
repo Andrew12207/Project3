@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -33,20 +34,17 @@ public:
             delete temp;
         }
     }
+
+    // Helper function to get head node
+    Node* getHead() {
+        return head;
+    }
     
     // Insert a new node at the beginning of the list
     void insert(int id, std::string name, std::string store, float price) {
         Node* newNode = new Node(id, name, store, price);
         newNode->next = head;
         head = newNode;
-    }
-
-    void mergeSort() {
-        head = MergeSort::mergeSort(head);
-    }
-
-    Node* getHead() const {
-        return head;
     }
 };
 
