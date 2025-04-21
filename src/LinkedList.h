@@ -40,6 +40,14 @@ public:
         newNode->next = head;
         head = newNode;
     }
+
+    void mergeSort() {
+        head = MergeSort::mergeSort(head);
+    }
+
+    Node* getHead() const {
+        return head;
+    }
 };
 
 // Loading data into linked list from csv
