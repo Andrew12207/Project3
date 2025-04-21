@@ -12,7 +12,7 @@ include_directories(src)
 
 add_executable(Main
         src/main.cpp # your main file
-        src/MergeSort.h src/MergeSort.cpp src/ItemMap.h
+        src/MergeSort.h src/MergeSort.cpp src/ItemMap.h src/LinkedList.h
         # add your own header files below - should be automatically added in CLion
         # example (can also separate with newlines):
         # src/AVL.h src/AVL.cpp
