@@ -7,7 +7,9 @@
 using namespace std;
 
 int main() {
-    int id = getID("NoodleNook Sugar Granulated 1lb");
+    unordered_map<string, int> products;
+    createMap(products);
+    int id = getID(products, "NoodleNook Sugar Granulated 1lb");
     cout << id << endl;
     return 0;
 }

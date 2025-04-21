@@ -30,11 +30,13 @@ unordered_map<string, int> loadProducts(const string& csvPath) {
     return products;
 }
 
-int getID(const string& name) {
+void createMap(unordered_map<string, int>& products) {
     string CSV = "unique_products.csv";
-    unordered_map<string, int> products;
     products = loadProducts(CSV);
+}
+    
 
+int getID(unordered_map<string, int>& products, const string& name) {
     auto it = products.find(name);
     if (it != products.end()) {
         int id = it->second;
