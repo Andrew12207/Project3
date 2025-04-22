@@ -6,7 +6,7 @@
 
 using namespace std;
 
-unordered_map<string, int> loadProducts(const string& csvPath) {
+inline unordered_map<string, int> loadProducts(const string& csvPath) {
     ifstream CSV(csvPath);
     if (!CSV.is_open()) {
         throw runtime_error("Could not open " + csvPath);
@@ -30,13 +30,13 @@ unordered_map<string, int> loadProducts(const string& csvPath) {
     return products;
 }
 
-void createMap(unordered_map<string, int>& products) {
+inline void createMap(unordered_map<string, int>& products) {
     string CSV = "unique_products.csv";
     products = loadProducts(CSV);
 }
     
 
-int getID(unordered_map<string, int>& products, const string& name) {
+inline int getID(unordered_map<string, int>& products, const string& name) {
     auto it = products.find(name);
     if (it != products.end()) {
         int id = it->second;

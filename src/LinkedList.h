@@ -49,7 +49,7 @@ public:
 };
 
 // Loading data into linked list from csv
-bool loadCSVToLinkedList(LinkedList& list) {
+inline bool loadCSVToLinkedList(LinkedList& list) {
     std::string filename = "product_list.csv";
     std::ifstream file(filename);
     if (!file.is_open()) {

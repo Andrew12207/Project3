@@ -1,3 +1,1 @@
-"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E rm -f CMakeFiles\Main.dir/objects.a
-C:\mingw64\bin\ar.exe qc CMakeFiles\Main.dir/objects.a @CMakeFiles\Main.dir\objects1.rsp
-C:\mingw64\bin\g++.exe  -Wall -Werror -g -Wl,--whole-archive CMakeFiles\Main.dir/objects.a -Wl,--no-whole-archive -o Main.exe -Wl,--out-implib,libMain.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Main.dir\linklibs.rsp
+/usr/bin/g++   -Wall -Werror -g   CMakeFiles/Main.dir/Main_autogen/mocs_compilation.cpp.o CMakeFiles/Main.dir/src/main.cpp.o CMakeFiles/Main.dir/src/GUIWindow.cpp.o  -o Main  /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8 /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8 /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8 

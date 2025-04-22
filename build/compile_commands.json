@@ -1,7 +1,17 @@
 [
 {
-  "directory": "C:/Users/ampri/Desktop/COP3530/Project3/build",
-  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/Main.dir/includes_CXX.rsp  -Wall -Werror -g -o CMakeFiles\\Main.dir\\src\\main.cpp.obj -c C:\\Users\\ampri\\Desktop\\COP3530\\Project3\\src\\main.cpp",
-  "file": "C:/Users/ampri/Desktop/COP3530/Project3/src/main.cpp"
+  "directory": "/workspaces/Project3/build",
+  "command": "/usr/bin/g++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/workspaces/Project3/build/Main_autogen/include -I/workspaces/Project3/src -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui   -Wall -Werror -g   -fPIC -std=gnu++14 -o CMakeFiles/Main.dir/Main_autogen/mocs_compilation.cpp.o -c /workspaces/Project3/build/Main_autogen/mocs_compilation.cpp",
+  "file": "/workspaces/Project3/build/Main_autogen/mocs_compilation.cpp"
+},
+{
+  "directory": "/workspaces/Project3/build",
+  "command": "/usr/bin/g++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/workspaces/Project3/build/Main_autogen/include -I/workspaces/Project3/src -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui   -Wall -Werror -g   -fPIC -std=gnu++14 -o CMakeFiles/Main.dir/src/main.cpp.o -c /workspaces/Project3/src/main.cpp",
+  "file": "/workspaces/Project3/src/main.cpp"
+},
+{
+  "directory": "/workspaces/Project3/build",
+  "command": "/usr/bin/g++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/workspaces/Project3/build/Main_autogen/include -I/workspaces/Project3/src -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui   -Wall -Werror -g   -fPIC -std=gnu++14 -o CMakeFiles/Main.dir/src/GUIWindow.cpp.o -c /workspaces/Project3/src/GUIWindow.cpp",
+  "file": "/workspaces/Project3/src/GUIWindow.cpp"
 }
 ]
