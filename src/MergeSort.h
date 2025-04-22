@@ -3,64 +3,89 @@
 #include <string>
 #include "LinkedList.h"
 
-struct Node;
-
 class MergeSort {
 public:
     static Node* mergeSort(Node* head) {
+        // check if list is empty or has only one element
         if (head == nullptr || head->next == nullptr) {
             return head;
         }
         
-        Node* front = nullptr;
-        Node* back = nullptr;
+        int size = 1;
+        Node* current = head;
+        int totalLength = getLength(head);  // Get total length of the list
         
-        splitList(head, &front, &back);
+        Node dummy(0, "", "", 0.0);
+        dummy.next = head;
         
-        front = mergeSort(front);
-        back = mergeSort(back);
+        // start merge sort from bottom up
+        while (size < totalLength) {
+            Node* tail = &dummy; 
+            current = dummy.next; 
+            
+            // Merge subarrays of current size
+            while (current) {
+                Node* left = current;
+                Node* right = split(left, size);
+                current = split(right, size);
+                tail = merge(left, right, tail);
+            }
+            
+            size *= 2;
+        }
+        std::cout << "Merge sort completed" << std::endl;
         
-        return mergeLists(front, back);
+        return dummy.next;
     }
     
 private:
-    static void splitList(Node* head, Node** frontRef, Node** backRef) {
-        if (head == nullptr || head->next == nullptr) {
-            *frontRef = head;
-            *backRef = nullptr;
-            return;
+    // Calculate the length of the linked list
+    static int getLength(Node* head) {
+        int length = 0;
+        Node* current = head;
+        while (current) {
+            length++;
+            current = current->next;
         }
-        
-        Node* slow = head;
-        Node* fast = head->next;
-        
-        while (fast != nullptr) {
-            fast = fast->next;
-            if (fast != nullptr) {
-                slow = slow->next;
-                fast = fast->next;
-            }
-        }
-        
-        *frontRef = head;
-        *backRef = slow->next;
-        slow->next = nullptr;
+        return length;
     }
     
-    static Node* mergeLists(Node* a, Node* b) {
-        if (a == nullptr) return b;
-        if (b == nullptr) return a;
+    // Split the list into two parts after n nodes
+    static Node* split(Node* head, int n) {
+        if (!head) return nullptr;
         
-        Node* result = nullptr;
-        
-        if (a->id <= b->id) {
-            result = a;
-            result->next = mergeLists(a->next, b);
-        } else {
-            result = b;
-            result->next = mergeLists(a, b->next);
+        for (int i = 1; head && i < n; i++) {
+            head = head->next;
         }
         
-        return result;
+        if (!head) return nullptr;
+        
+        // break the list and return the second part
+        Node* second = head->next;
+        head->next = nullptr;
+        return second;
+    }
+    
+    // attach two merged sorted lists to tail
+    static Node* merge(Node* left, Node* right, Node* tail) {
+        while (left && right) {
+            if (left->id <= right->id) {
+                tail->next = left;
+                left = left->next;
+            } else {
+                tail->next = right;
+                right = right->next;
+            }
+            tail = tail->next;
+        }
+        
+        tail->next = (left) ? left : right;
+        
+        // Move tail to the end of the merged list
+        while (tail->next) {
+            tail = tail->next;
+        }
+        
+        return tail;
     }
 };

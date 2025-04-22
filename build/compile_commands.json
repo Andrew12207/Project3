@@ -1,17 +1,20 @@
 [
 {
-  "directory": "/workspaces/Project3/build",
-  "command": "/usr/bin/g++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/workspaces/Project3/build/Main_autogen/include -I/workspaces/Project3/src -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui   -Wall -Werror -g   -fPIC -std=gnu++14 -o CMakeFiles/Main.dir/Main_autogen/mocs_compilation.cpp.o -c /workspaces/Project3/build/Main_autogen/mocs_compilation.cpp",
-  "file": "/workspaces/Project3/build/Main_autogen/mocs_compilation.cpp"
+  "directory": "C:/Users/aiden/OneDrive/Documents/GitHub/avl-project/Project3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/Main.dir/includes_CXX.rsp  -Wall -Werror -g -std=gnu++17 -o CMakeFiles\\Main.dir\\Main_autogen\\mocs_compilation.cpp.obj -c C:\\Users\\aiden\\OneDrive\\Documents\\GitHub\\avl-project\\Project3\\build\\Main_autogen\\mocs_compilation.cpp",
+  "file": "C:/Users/aiden/OneDrive/Documents/GitHub/avl-project/Project3/build/Main_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/Main.dir/Main_autogen/mocs_compilation.cpp.obj"
 },
 {
-  "directory": "/workspaces/Project3/build",
-  "command": "/usr/bin/g++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/workspaces/Project3/build/Main_autogen/include -I/workspaces/Project3/src -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui   -Wall -Werror -g   -fPIC -std=gnu++14 -o CMakeFiles/Main.dir/src/main.cpp.o -c /workspaces/Project3/src/main.cpp",
-  "file": "/workspaces/Project3/src/main.cpp"
+  "directory": "C:/Users/aiden/OneDrive/Documents/GitHub/avl-project/Project3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/Main.dir/includes_CXX.rsp  -Wall -Werror -g -std=gnu++17 -o CMakeFiles\\Main.dir\\src\\main.cpp.obj -c C:\\Users\\aiden\\OneDrive\\Documents\\GitHub\\avl-project\\Project3\\src\\main.cpp",
+  "file": "C:/Users/aiden/OneDrive/Documents/GitHub/avl-project/Project3/src/main.cpp",
+  "output": "CMakeFiles/Main.dir/src/main.cpp.obj"
 },
 {
-  "directory": "/workspaces/Project3/build",
-  "command": "/usr/bin/g++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/workspaces/Project3/build/Main_autogen/include -I/workspaces/Project3/src -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui   -Wall -Werror -g   -fPIC -std=gnu++14 -o CMakeFiles/Main.dir/src/GUIWindow.cpp.o -c /workspaces/Project3/src/GUIWindow.cpp",
-  "file": "/workspaces/Project3/src/GUIWindow.cpp"
+  "directory": "C:/Users/aiden/OneDrive/Documents/GitHub/avl-project/Project3/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64 @CMakeFiles/Main.dir/includes_CXX.rsp  -Wall -Werror -g -std=gnu++17 -o CMakeFiles\\Main.dir\\src\\GUIWindow.cpp.obj -c C:\\Users\\aiden\\OneDrive\\Documents\\GitHub\\avl-project\\Project3\\src\\GUIWindow.cpp",
+  "file": "C:/Users/aiden/OneDrive/Documents/GitHub/avl-project/Project3/src/GUIWindow.cpp",
+  "output": "CMakeFiles/Main.dir/src/GUIWindow.cpp.obj"
 }
 ]

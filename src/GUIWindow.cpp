@@ -3,7 +3,7 @@
 #include <iomanip>
 
 GUIWindow::GUIWindow(QWidget *parent)
-    : QGUIWindow(parent)
+    : QMainWindow(parent)
 {
     setWindowTitle("Product Price Lookup");
     resize(800, 500);
@@ -36,7 +36,7 @@ void GUIWindow::setupUI() {
     // Sort method dropdown/combobox
     sortMethodDropdown = new QComboBox(controlsGroup);
     sortMethodDropdown->addItem("Merge Sort");
-    sortMethodDropdown->addItem("Quick Sort");
+    sortMethodDropdown->addItem("Shell Sort");
     timeTakenLabel = new QLabel("Time taken to sort: ---μs", controlsGroup);
     
     controlsLayout->addLayout(searchLayout);
@@ -56,7 +56,6 @@ void GUIWindow::setupUI() {
 void GUIWindow::loadData() {
     // Load name/id map + linked list
     createMap(products);
-    loadCSVToLinkedList(productList);
 }
 
 void GUIWindow::onSearchClicked() {
@@ -68,16 +67,18 @@ void GUIWindow::onSearchClicked() {
                            "The product name you entered does not match any existing product names");
         return;
     }
+    loadCSVToLinkedList(productList);
     
     auto start = std::chrono::high_resolution_clock::now();
     
     Node* head = productList.getHead();
     
     if (sortMethodDropdown->currentText() == "Merge Sort") {
+        std::cout << "Using Merge Sort" << std::endl;
         head = MergeSort::mergeSort(head);
     } else {
-        QuickSort sorter;
-        sorter.quickSort(head);
+        std::cout << "Using Shell Sort" << std::endl;
+        head = ShellSort::shellSort(head);
     }
     
     auto end = std::chrono::high_resolution_clock::now();
@@ -85,24 +86,27 @@ void GUIWindow::onSearchClicked() {
     timeTakenLabel->setText(QString("Time taken to sort: %1μs").arg(duration.count()));
     
 
-    displayResults(productId);
+    displayResults(productId, head);
 }
 
-void GUIWindow::displayResults(int productId) {
+void GUIWindow::displayResults(int productId, Node* head) {
     // Clear previous results if necessary
     pricesDisplay->clear();
-    
+
+    std::cout << "Displaying results for product ID: " << productId << std::endl;
     // Linear search through the sorted linked list
-    Node* current = productList.getHead();
+    //Node* current = productList.getHead();
     std::stringstream results;
-    
+
+    Node* current = head;
     while (current != nullptr) {
         if (current->id == productId) {
+            std::cout << "Found matching product: " << current->name << std::endl;
             results << formatNode(current) << "\n\n";
         }
         current = current->next;
     }
-    
+    std::cout << "Results found:\n" << results.str() << std::endl;
     // Display results
     pricesDisplay->setText(QString::fromStdString(results.str()));
 }

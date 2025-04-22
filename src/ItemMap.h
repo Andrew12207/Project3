@@ -6,6 +6,7 @@
 
 using namespace std;
 
+// Mapping item name to ID
 inline unordered_map<string, int> loadProducts(const string& csvPath) {
     ifstream CSV(csvPath);
     if (!CSV.is_open()) {
@@ -37,11 +38,14 @@ inline void createMap(unordered_map<string, int>& products) {
     
 
 inline int getID(unordered_map<string, int>& products, const string& name) {
+    cout << "Searching for: " << name << endl;
     auto it = products.find(name);
     if (it != products.end()) {
         int id = it->second;
+        cout << "Found product ID: " << id << endl;
         return id;
     } else {
+        cout << "Product not found" << endl;
         return 0;
     }
 }

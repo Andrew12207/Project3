@@ -14,7 +14,7 @@
 #include "ItemMap.h"
 #include "LinkedList.h"
 #include "MergeSort.h"
-#include "QuickSort.h"
+#include "ShellSort.h"
 
 class GUIWindow : public QMainWindow {
     Q_OBJECT
@@ -38,6 +38,6 @@ private:
     
     void setupUI();
     void loadData();
-    void displayResults(int productId);
+    void displayResults(int productId, Node* head);
     std::string formatNode(Node* node);
 };
