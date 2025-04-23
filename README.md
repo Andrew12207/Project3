@@ -15,7 +15,7 @@ A desktop application that helps users compare prices across different grocery s
 
 ### Setup Instructions
 1. Clone the repository to your local machine:
-   git clone https://github.com/yourusername/grocery-price-comparison.git
+   git clone https://github.com/yourusername/Project3.git
 
 2. Download Qt 6.9.0 using the Qt online installer:
 - https://doc.qt.io/qt-6/qt-online-installation.html
